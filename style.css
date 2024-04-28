@@ -1,0 +1,629 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'oldschool grotesk';
+    src: url('font/OldschoolGrotesk-NormalRegular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'ogbook';
+    src: url('Font/OGbook.otf');
+}
+
+
+.custom-cursor {
+    cursor: pointer;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ECC2D8;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+
+::selection {
+    color: #ECC2D8;
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F6F7;
+    cursor: url('cursor.png'), auto;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F5F6F7;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'oldschool grotesk';
+    margin-bottom: 200px;
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+
+
+}
+
+.highlight {
+    background-color: #ECC2D8;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 15px;
+
+}
+
+.highlight a:hover {
+    color: white;
+}
+
+
+
+span {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+body {
+    padding: 50px;
+}
+
+span {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+body {
+    padding: 50px;
+}
+
+.highlighteffect {
+    margin-top: 350px;
+    margin-left: 30px;
+    font-family: 'ogbook';
+    font-size: 200px;
+    color: #ECC2D8
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: #ECC2D8;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-family: 'ogbook';
+
+}
+
+.nav-buttons {
+    margin-left: 60px;
+    font-family: 'ogbook';
+
+
+}
+
+.description {
+    flex: 1;
+    /* Take up the available space on the left */
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.description h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.job-title {
+    margin-top: 0;
+    /* Remove the default margin from the job title */
+    margin-top: 2px;
+    /* Add margin to separate the job title from the first paragraph */
+}
+
+.job-title1 {
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.job-title2 {
+    margin-left: 200px;
+    color: #999999;
+    font-size: 15px;
+}
+
+.job-title3 {
+    margin-left: 200px;
+    color: #ECC2D8;
+    font-size: 15px;
+    font-family: 'oldschool grotesk';
+
+}
+
+nav {
+    display: flex;
+    /* Display the navigation as a flex container */
+    align-self: flex-start;
+    margin-top: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* Display the navigation list as a flex container */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-right: 15px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Section 1
+
+/* Your existing CSS styles */
+.flower img {
+    width: 100px;
+    height: 100px;
+}
+
+.flower img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.flower:hover img {
+        transform: scale(1.3) rotate(180deg);
+      }
+
+
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.project {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-description {
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.project-description {
+    display: flex;
+    align-items: center;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+}
+
+.project-description h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.project {
+    font-family: 'oldschool grotesk';
+}
+
+.right-column {
+    font-size: 15px;
+}
+
+.left-column {
+    font-size: 15px;
+}
+
+.rounded {
+    background-color: #EFA2F2;
+    color: rgb(0, 0, 0);
+    margin-right: 240px;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.rounded1 {
+    background-color: #BBD6FB;
+    color: rgb(0, 0, 0);
+    margin-right: 130px;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.rounded2 {
+    background-color: #14210C;
+    color: rgb(255, 255, 255);
+    margin-right: 200px;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.desc {
+    color: #999999;
+}
+
+
+
+/* footer
+
+/* Your existing CSS styles */
+
+/* Style the footer */
+footer {
+    background-color: #F5F6F7;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin: 100px;
+    font-family: 'oldschool grotesk';
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    footer {
+        text-align: left;
+        padding: 10px;
+    }
+
+    footer li {
+        display: block;
+        margin: 0;
+    }
+}
+
+
+/* side b 
+
+/* Reset some default styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the main content */
+main {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the columns */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.column {
+    flex: 1;
+    text-align: left;
+    font-family: 'oldschool grotesk';
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.column h1 {
+    font-size: 50px;
+}
+
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: none;
+        width: 100%;
+    }
+
+    .column p {
+        font-size: 14px;
+    }
+}
+
+.two-columns {
+    flex: 2;
+    /* Takes up two columns of space */
+}
+
+
+/* About page */
+.aboutme {
+    margin-top: 200px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: top;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.about {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'oldschool grotesk';
+    line-height: 30px;
+}
+
+/* DIVIDING CONTENT */
+
+.divide {
+    padding: 10px;
+}
+
+.divide {
+    display: flex;
+    align-items: top;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.divide {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'oldschool grotesk';
+    line-height: 30px;
+}
+
+.divide h2 {
+    font-size: 12px;
+
+}
+
+.divide img {
+    width: 100%;
+    /* Ensures the image fits the width of the right column */
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its original width */
+    height: auto;
+    /* Maintains aspect ratio */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.thumbnail img {
+    width: 100%;
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its original width */
+    height: auto;
+    /* Maintains aspect ratio */
+    margin-bottom: 80px;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-top: 200px;
+}
+
+/* Nuture */
+
+.job-title4 {
+    padding-top: 40px;
+    margin-left: 100px;
+    color: #ECC2D8
+}
+
+.job-title5 {
+    margin-left: 100px;
+    color: #999999
+}
+
+/* DATEMATE */
+
+.guidebook {
+    display: grid;
+    gap: var(size 3);
+    grid-auto-flow: column;
+    grid-auto-columns: 39%;
+    overflow-x: auto;
+}
+
+.features {
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.features {
+    margin-bottom: 10px;
+    font-family: 'oldschool grotesk';
+    line-height: 30px;
+    text-align: center;
+}
+
+.features h1 {
+    font-size: 100px;
+    margin-bottom: 50px;
+
+
+}
+
+.features h2 {
+    font-size: 30px;
+
+}
+
+.features h2 {
+    font-size: 15px;
+
+}
+
+
+
+.features img {
+    width: 100%;
+    /* Ensures the image fits the width of the right column */
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its original width */
+    height: auto;
+    /* Maintains aspect ratio */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
