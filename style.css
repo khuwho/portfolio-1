@@ -175,7 +175,7 @@ body {
     margin-left: 200px;
     color: #ECC2D8;
     font-size: 15px;
-    font-family: 'oldschool grotesk';
+   font-family: 'ogbook';
 
 }
 
@@ -248,7 +248,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    font-family: 'oldschool grotesk';
+    font-family: 'ogbook';
 }
 
 .project {
