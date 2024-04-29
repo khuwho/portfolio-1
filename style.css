@@ -1,7 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+:root {
+font-family: 'ogbook';
+}
 
 /* Reset some default styles */
 * {
